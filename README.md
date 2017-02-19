@@ -1,8 +1,8 @@
 # About
-Base project for playing around with ES2015. Setup with Gulp, Babel and Browserify using screencast from codeschool (https://github.com/codeschool/babel-with-gulp)
+Basic example of a ES2015 forum with babel and gulp. For the backend a dummy api is being used (json-server)
 
-# Using
-Run `gulp` from the command line!
+# Setup for development
+`npm install -g babel-cli gulp-cli json-server`
 
-The project is currently setup to transpile code under the _/src_ folder using the
-_/src/app.js_ file as an entry point. Transpiled code is packaged to _dist/bundle.js_
+# Starting
+`json-server server/db.json`

@@ -1,4 +1,15 @@
-import FlashMessage from "./flash-message";
+import Post from "./post"
+import ui from "./ui"
+import User from "./user"
 
-let flash = new FlashMessage("Gulp, Babel and Browserify");
-flash.display();
+Post.findAll()
+  .then(ui.renderPosts)
+  .catch( (error) => {
+    console.log(error);
+  });
+
+User.findRecent()
+  .then(ui.renderUsers)
+  .catch( (error) => {
+    console.log(error);
+  });
